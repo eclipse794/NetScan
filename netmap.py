@@ -5,11 +5,14 @@ import platform
 import ipaddress
 import concurrent.futures
 import pandas as pd
+import os
+import glob
 from pyvis.network import Network
 
 # ---------- НАСТРОЙКИ ----------
 EXCEL_FILE = "inventory.xlsx"      # путь к вашему Excel-файлу
 SHEET_NAME = 0                     # номер листа (0 - первый) или имя листа
+SWITCH_FILES_PATTERN = "*.txt"     # шаблон для файлов коммутаторов
 
 TARGET_SUBNETS = [
     ipaddress.ip_network('192.168.200.0/24'),
@@ -28,11 +31,132 @@ def load_name_mapping(excel_path, sheet=0):
     mapping = {}
     for _, row in df.iterrows():
         ip = str(row['ip']).strip()
-        name = str(row['name']).strip()
-        if ip and name:
+        name = str(row['name']).strip() if pd.notna(row['name']) else ''
+        if ip:
             mapping[ip] = name
     print(f"Загружено {len(mapping)} записей из Excel")
     return mapping
+
+
+def parse_switch_files(pattern):
+    """
+    Парсит текстовые файлы коммутаторов и возвращает структуру:
+    {switch_name: {port: {'status': 'up/down', 'description': str, 'mac': str}}}
+    """
+    switch_data = {}
+    
+    for filepath in glob.glob(pattern):
+        # Пропускаем text.txt если он есть
+        if filepath == 'text.txt':
+            continue
+            
+        try:
+            with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+        except Exception as e:
+            print(f"Предупреждение: не удалось прочитать {filepath}: {e}")
+            continue
+        
+        # Извлекаем имя коммутатора из первой строки с prompt
+        switch_name_match = re.search(r'^(\S+)#', content, re.MULTILINE)
+        if not switch_name_match:
+            # Используем имя файла как имя коммутатора
+            switch_name = os.path.basename(filepath).replace('.txt', '')
+        else:
+            switch_name = switch_name_match.group(1)
+        
+        ports = {}
+        current_port = None
+        
+        # Паттерн для поиска интерфейсов
+        interface_pattern = re.compile(
+            r'^(gigabitethernet|tengigabitethernet|fastethernet)(\d+/\d+/\d+)\s+is\s+(\w+)',
+            re.IGNORECASE | re.MULTILINE
+        )
+        
+        # Паттерн для описания
+        desc_pattern = re.compile(r'^\s+Description:\s*(.+)$', re.MULTILINE)
+        
+        # Паттерн для MAC адреса
+        mac_pattern = re.compile(r'MAC address is ([0-9a-fA-F:]{17})')
+        
+        for match in interface_pattern.finditer(content):
+            iface_type = match.group(1).lower()
+            port_num = match.group(2)
+            status = match.group(3).lower()
+            
+            current_port = f"{iface_type}{port_num}"
+            
+            # Находим описание для этого порта (ищем после позиции матча)
+            start_pos = match.end()
+            # Ищем до следующего интерфейса или конца блока
+            next_iface = interface_pattern.search(content, start_pos)
+            end_pos = next_iface.start() if next_iface else len(content)
+            
+            port_block = content[start_pos:end_pos]
+            
+            # Извлекаем описание
+            desc_match = desc_pattern.search(port_block)
+            description = desc_match.group(1).strip() if desc_match else ''
+            
+            # Извлекаем MAC
+            mac_match = mac_pattern.search(port_block)
+            mac = mac_match.group(1).upper() if mac_match else ''
+            
+            ports[current_port] = {
+                'status': status,
+                'description': description,
+                'mac': mac
+            }
+        
+        switch_data[switch_name] = ports
+        print(f"Обработан коммутатор {switch_name}: {len(ports)} портов")
+    
+    return switch_data
+
+
+def build_port_to_device_map(switch_data, name_mapping):
+    """
+    Строит карту соответствия портов устройствам.
+    Возвращает словарь: {(switch_name, port): {'device_name': str, 'ip': str, 'status': str}}
+    """
+    port_map = {}
+    
+    # Создаем обратный маппинг имя -> IP
+    name_to_ip = {v: k for k, v in name_mapping.items() if v}
+    
+    for switch_name, ports in switch_data.items():
+        for port, info in ports.items():
+            desc = info['description']
+            if not desc or desc.upper() == 'DISABLED':
+                continue
+            
+            device_info = {
+                'description': desc,
+                'status': info['status'],
+                'mac': info.get('mac', ''),
+                'ip': None,
+                'device_name': None
+            }
+            
+            # Пытаемся найти соответствие по имени в Excel
+            # Ищем частичное совпадение (case-insensitive)
+            desc_lower = desc.lower()
+            for name, ip in name_to_ip.items():
+                name_lower = name.lower()
+                if name_lower in desc_lower or desc_lower in name_lower:
+                    device_info['device_name'] = name
+                    device_info['ip'] = ip
+                    break
+            
+            # Если не нашли, проверяем по MAC адресу (если есть)
+            if not device_info['ip'] and info.get('mac'):
+                # Здесь можно добавить поиск по ARP таблице если она передана
+                pass
+            
+            port_map[(switch_name, port)] = device_info
+    
+    return port_map
 
 def is_in_target_subnets(ip_str):
     """Проверяет, входит ли IP-адрес в одну из целевых подсетей."""
@@ -178,9 +302,9 @@ def build_layered_routes(target_ips, name_map, arp_data):
                 layers[level][ip] = label
     return layers, routes_info
 
-def create_html(layers, routes_info, output_file="network_map.html"):
+def create_html(layers, routes_info, switch_data=None, port_map=None, output_file="network_map.html"):
     """Генерирует интерактивную HTML-схему с помощью pyvis."""
-    net = Network(height="800px", width="100%", directed=True)
+    net = Network(height="900px", width="100%", directed=True)
     net.set_options("""
     {
       "layout": {
@@ -188,15 +312,16 @@ def create_html(layers, routes_info, output_file="network_map.html"):
           "enabled": true,
           "direction": "LR",
           "sortMethod": "directed",
-          "levelSeparation": 200,
-          "nodeSpacing": 150
+          "levelSeparation": 250,
+          "nodeSpacing": 200,
+          "shakeTowards": "ROOTS"
         }
       },
       "physics": {
         "hierarchicalRepulsion": {
           "centralGravity": 0.0,
-          "springLength": 100,
-          "nodeDistance": 150
+          "springLength": 120,
+          "nodeDistance": 180
         },
         "minVelocity": 0.75,
         "solver": "hierarchicalRepulsion"
@@ -204,7 +329,13 @@ def create_html(layers, routes_info, output_file="network_map.html"):
       "interaction": {
         "zoomView": true,
         "dragView": true,
-        "dragNodes": false
+        "dragNodes": true
+      },
+      "edges": {
+        "smooth": {
+          "type": "curvedCW",
+          "roundness": 0.2
+        }
       }
     }
     """)
@@ -235,6 +366,58 @@ def create_html(layers, routes_info, output_file="network_map.html"):
             dst_level = i + 2
             net.add_edge(f"{src_level}_{path[i]}", f"{dst_level}_{path[i+1]}")
 
+    # Добавляем коммутаторы и их порты как отдельные узлы
+    if switch_data and port_map:
+        switch_level_offset = len(layers) + 1
+        
+        for switch_name, ports in switch_data.items():
+            # Создаём узел коммутатора
+            switch_node_id = f"switch_{switch_name}"
+            # Пытаемся найти IP коммутатора в name_mapping
+            switch_ip = None
+            for ip, name in name_mapping.items():
+                if switch_name.lower() in name.lower():
+                    switch_ip = ip
+                    break
+            
+            switch_label = f"{switch_name}"
+            if switch_ip:
+                switch_label += f"\n{switch_ip}"
+            
+            net.add_node(
+                switch_node_id,
+                label=switch_label,
+                level=switch_level_offset,
+                color='#ffebcc',
+                shape='ellipse',
+                font={'size': 11}
+            )
+            
+            # Добавляем активные порты как подключенные к коммутатору
+            active_ports_count = 0
+            for port, info in ports.items():
+                if info['status'] == 'up' and info['description'] and info['description'].upper() != 'DISABLED':
+                    port_node_id = f"port_{switch_name}_{port.replace('/', '_')}"
+                    port_label = f"{port}\n{info['description'][:20]}"
+                    
+                    # Определяем цвет по статусу
+                    port_color = '#90EE90' if info['status'] == 'up' else '#FFB6C1'
+                    
+                    net.add_node(
+                        port_node_id,
+                        label=port_label,
+                        level=switch_level_offset + 1,
+                        color=port_color,
+                        shape='dot',
+                        size=15,
+                        font={'size': 9}
+                    )
+                    
+                    net.add_edge(switch_node_id, port_node_id)
+                    active_ports_count += 1
+            
+            print(f"Коммутатор {switch_name}: добавлено {active_ports_count} активных портов")
+
     net.save_graph(output_file)
     print(f"Интерактивная схема сохранена в {output_file}")
     return output_file
@@ -247,6 +430,14 @@ if __name__ == "__main__":
         sys.exit(1)
 
     print(f"\nОбнаружена ОС: {SYSTEM}")
+
+    # Парсим файлы коммутаторов
+    print("\nЧтение файлов коммутаторов...")
+    switch_data = parse_switch_files(SWITCH_FILES_PATTERN)
+    
+    # Строим карту портов
+    port_map = build_port_to_device_map(switch_data, name_mapping)
+    print(f"Найдено {len(port_map)} активных подключений через порты коммутаторов")
 
     # 1. Сбор целей: ping + IP из Excel, входящие в целевые подсети
     print("\nСканирование подсетей (ping)...")
@@ -281,6 +472,6 @@ if __name__ == "__main__":
     layers, routes_info = build_layered_routes(list(all_targets), name_mapping, arp)
     print(f"Слоёв (включая уровень 0): {len(layers)}")
 
-    html_path = create_html(layers, routes_info)
+    html_path = create_html(layers, routes_info, switch_data, port_map)
     import webbrowser
     webbrowser.open(html_path)
