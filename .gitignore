@@ -1,18 +1,1 @@
-```
-# Dependencies
-lib/
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
-.vscode/
-.idea/
-```
+(netmap.py and network_map.html are source files, no build artifacts, dependencies, or temp files detected)

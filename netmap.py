@@ -177,7 +177,7 @@ def subnet_for_ip(ip_str):
     except ValueError:
         return "External"
 
-def ping_sweep(network, timeout_ms=800):
+def ping_sweep(network, timeout_ms=300):
     """Параллельное ping-сканирование подсети, возвращает список ответивших IP."""
     live_ips = []
     if SYSTEM == 'Windows':
@@ -185,14 +185,14 @@ def ping_sweep(network, timeout_ms=800):
     else:
         base_cmd = ['ping', '-c', '1', '-W', str(timeout_ms/1000)]
     
-    with concurrent.futures.ThreadPoolExecutor(max_workers=50) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=100) as executor:
         future_to_ip = {
             executor.submit(
                 subprocess.run,
                 base_cmd + [str(ip)],
                 capture_output=True,
                 text=True,
-                timeout=timeout_ms/1000 + 2
+                timeout=timeout_ms/1000 + 1
             ): str(ip)
             for ip in network.hosts()
         }
@@ -302,9 +302,9 @@ def build_layered_routes(target_ips, name_map, arp_data):
                 layers[level][ip] = label
     return layers, routes_info
 
-def create_html(layers, routes_info, switch_data=None, port_map=None, output_file="network_map.html"):
+def create_html(layers, routes_info, switch_data=None, port_map=None, name_mapping=None, output_file="network_map.html"):
     """Генерирует интерактивную HTML-схему с помощью pyvis."""
-    net = Network(height="900px", width="100%", directed=True)
+    net = Network(height="1200px", width="100%", directed=True)
     net.set_options("""
     {
       "layout": {
@@ -312,19 +312,18 @@ def create_html(layers, routes_info, switch_data=None, port_map=None, output_fil
           "enabled": true,
           "direction": "LR",
           "sortMethod": "directed",
-          "levelSeparation": 250,
-          "nodeSpacing": 200,
+          "levelSeparation": 300,
+          "nodeSpacing": 150,
           "shakeTowards": "ROOTS"
         }
       },
       "physics": {
+        "enabled": false,
         "hierarchicalRepulsion": {
           "centralGravity": 0.0,
-          "springLength": 120,
-          "nodeDistance": 180
-        },
-        "minVelocity": 0.75,
-        "solver": "hierarchicalRepulsion"
+          "springLength": 150,
+          "nodeDistance": 200
+        }
       },
       "interaction": {
         "zoomView": true,
@@ -333,8 +332,8 @@ def create_html(layers, routes_info, switch_data=None, port_map=None, output_fil
       },
       "edges": {
         "smooth": {
-          "type": "curvedCW",
-          "roundness": 0.2
+          "type": "orthogonal",
+          "roundness": 0
         }
       }
     }
@@ -398,7 +397,7 @@ def create_html(layers, routes_info, switch_data=None, port_map=None, output_fil
             for port, info in ports.items():
                 if info['status'] == 'up' and info['description'] and info['description'].upper() != 'DISABLED':
                     port_node_id = f"port_{switch_name}_{port.replace('/', '_')}"
-                    port_label = f"{port}\n{info['description'][:20]}"
+                    port_label = f"{port}\n{info['description'][:25]}"
                     
                     # Определяем цвет по статусу
                     port_color = '#90EE90' if info['status'] == 'up' else '#FFB6C1'
@@ -415,6 +414,22 @@ def create_html(layers, routes_info, switch_data=None, port_map=None, output_fil
                     
                     net.add_edge(switch_node_id, port_node_id)
                     active_ports_count += 1
+                    
+                    # Если порт связан с устройством из Excel, добавляем связь
+                    port_key = (switch_name, port)
+                    if port_key in port_map:
+                        device_info = port_map[port_key]
+                        if device_info.get('ip'):
+                            device_ip = device_info['ip']
+                            device_name = device_info.get('device_name', '')
+                            
+                            # Ищем соответствующий узел устройства на схеме
+                            for level, layer in enumerate(layers):
+                                if device_ip in layer:
+                                    target_node_id = f"{level}_{device_ip}"
+                                    # Добавляем связь от порта к устройству
+                                    net.add_edge(port_node_id, target_node_id, style='dashed', color='gray')
+                                    break
             
             print(f"Коммутатор {switch_name}: добавлено {active_ports_count} активных портов")
 
@@ -444,7 +459,7 @@ if __name__ == "__main__":
     ping_live = []
     for net in TARGET_SUBNETS:
         print(f"  {net}")
-        live = ping_sweep(net, timeout_ms=1000)
+        live = ping_sweep(net, timeout_ms=300)
         ping_live.extend(live)
         print(f"    Ping-ответов: {len(live)}")
 
@@ -472,6 +487,6 @@ if __name__ == "__main__":
     layers, routes_info = build_layered_routes(list(all_targets), name_mapping, arp)
     print(f"Слоёв (включая уровень 0): {len(layers)}")
 
-    html_path = create_html(layers, routes_info, switch_data, port_map)
+    html_path = create_html(layers, routes_info, switch_data, port_map, name_mapping)
     import webbrowser
     webbrowser.open(html_path)
