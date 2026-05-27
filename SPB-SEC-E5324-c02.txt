@@ -1,0 +1,1928 @@
+SPB-SEC-E5324-c02#show system
+System Description:                       MES5324 28-port 10G/40G Managed Switch
+System Up Time (days,hour:min:sec):       312,00:28:37
+System Contact:                           Security
+System Name:                              SPB-SEC-E5324-c02
+System Location:                          SPB, City, 5 Floor
+System MAC Address:                       e4:5a:d4:0c:d3:c0
+System Object ID:                         1.3.6.1.4.1.35265.1.74
+Reset-Button:                             enable
+
+
+Unit                           Device
+---- ----------------------------------------------------------
+ 1             MES5324 28-port 10G/40G Managed Switch
+
+
+Unit Main Power Supply Redundant Power Supply
+---- ----------------- ----------------------
+ 1          OK                   OK
+
+Unit                Fans Status
+----   -------------------------------------
+ 1                FANs OK
+
+Unit Temperature (Celsius)  Status
+---- --------------------- --------
+ 1            34              OK
+
+SPB-SEC-E5324-c02#show interface
+------------------ show interfaces te1/0/1 ------------------
+tengigabitethernet1/0/1 is up (connected)
+  Interface index is 1
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c1
+  Description: Transoil_Uplink
+  Interface MTU is 1500
+  Full-duplex, 10000Mbps, link type is 10000Mbps full-duplex, media type is 10G-Fiber
+  Link is up for 305 days, 14 hours, 31 minutes and 44 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 2603 Kbit/s
+  15 second output rate is 26371 Kbit/s
+      13700034998 packets input, 10890174343791 bytes received
+      78467094 broadcasts, 18543716 multicasts
+      6 input errors, 6 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      76554239314 packets output, 73102333861420 bytes sent
+      29423678 broadcasts, 117820920 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/2 ------------------
+tengigabitethernet1/0/2 is down (admin.shutdown)
+  Interface index is 2
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c2
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 41 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/3 ------------------
+tengigabitethernet1/0/3 is down (admin.shutdown)
+  Interface index is 3
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c3
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 44 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/4 ------------------
+tengigabitethernet1/0/4 is down (admin.shutdown)
+  Interface index is 4
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c4
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 44 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/5 ------------------
+tengigabitethernet1/0/5 is down (admin.shutdown)
+  Interface index is 5
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c5
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 43 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/6 ------------------
+tengigabitethernet1/0/6 is down (admin.shutdown)
+  Interface index is 6
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c6
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 42 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/7 ------------------
+tengigabitethernet1/0/7 is down (admin.shutdown)
+  Interface index is 7
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c7
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 42 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/8 ------------------
+tengigabitethernet1/0/8 is down (admin.shutdown)
+  Interface index is 8
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c8
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 41 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/9 ------------------
+tengigabitethernet1/0/9 is down (admin.shutdown)
+  Interface index is 9
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:c9
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 40 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/10 ------------------
+tengigabitethernet1/0/10 is down (admin.shutdown)
+  Interface index is 10
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:ca
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 40 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/11 ------------------
+tengigabitethernet1/0/11 is down (admin.shutdown)
+  Interface index is 11
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:cb
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 39 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/12 ------------------
+tengigabitethernet1/0/12 is up (connected)
+  Interface index is 12
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:cc
+  Description: SPB-SEC-E2348P-c01_te1/0/2
+  Interface MTU is 1500
+  Full-duplex, 10000Mbps, link type is 10000Mbps full-duplex, media type is 10G-Fiber
+  Link is up for 312 days, 0 hours, 27 minutes and 22 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 69745 Kbit/s
+  15 second output rate is 11538 Kbit/s
+      197629981697 packets input, 246289720927010 bytes received
+      10260107 broadcasts, 2706604 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      118188007760 packets output, 83805948752230 bytes sent
+      98371288 broadcasts, 134087082 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/13 ------------------
+tengigabitethernet1/0/13 is down (admin.shutdown)
+  Interface index is 13
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:cd
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 43 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/14 ------------------
+tengigabitethernet1/0/14 is down (admin.shutdown)
+  Interface index is 14
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:ce
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 42 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/15 ------------------
+tengigabitethernet1/0/15 is down (admin.shutdown)
+  Interface index is 15
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:cf
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 42 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/16 ------------------
+tengigabitethernet1/0/16 is down (admin.shutdown)
+  Interface index is 16
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d0
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 41 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/17 ------------------
+tengigabitethernet1/0/17 is down (admin.shutdown)
+  Interface index is 17
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d1
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 40 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/18 ------------------
+tengigabitethernet1/0/18 is down (admin.shutdown)
+  Interface index is 18
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d2
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 39 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/19 ------------------
+tengigabitethernet1/0/19 is up (connected)
+  Interface index is 19
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d3
+  Description: SecSrvHpV03_te4/2
+  Interface MTU is 1500
+  Full-duplex, 10000Mbps, link type is 10000Mbps full-duplex, media type is 10G-Fiber
+  Link is up for 312 days, 0 hours, 27 minutes and 14 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 5922 Kbit/s
+  15 second output rate is 7886 Kbit/s
+      22925531227 packets input, 29404659201683 bytes received
+      5 broadcasts, 904958 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      24888812787 packets output, 33511318889442 bytes sent
+      116699 broadcasts, 41697643 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/20 ------------------
+tengigabitethernet1/0/20 is up (connected)
+  Interface index is 20
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d4
+  Description: SecSrvHpV04_te4/2
+  Interface MTU is 1500
+  Full-duplex, 10000Mbps, link type is 10000Mbps full-duplex, media type is 10G-Fiber
+  Link is up for 263 days, 0 hours, 8 minutes and 33 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 7885 Kbit/s
+  15 second output rate is 5924 Kbit/s
+      24848376999 packets input, 33507063254560 bytes received
+      116735 broadcasts, 1261791 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      4 pause frames received
+      22965966557 packets output, 29408914825771 bytes sent
+      0 broadcasts, 41340284 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/21 ------------------
+tengigabitethernet1/0/21 is up (connected)
+  Interface index is 21
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d5
+  Description: SecSrvHpV03_te4/1
+  Interface MTU is 1500
+  Full-duplex, 10000Mbps, link type is 10000Mbps full-duplex, media type is 10G-Fiber
+  Link is up for 312 days, 0 hours, 27 minutes and 8 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 13682 Kbit/s
+  15 second output rate is 3313 Kbit/s
+      56483621722 packets input, 59449773092487 bytes received
+      1945628 broadcasts, 5033914 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      4 pause frames received
+      58756022973 packets output, 49881856776207 bytes sent
+      33290810 broadcasts, 153303609 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/22 ------------------
+tengigabitethernet1/0/22 is up (connected)
+  Interface index is 22
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d6
+  Description: SecSrvHpV04_te4/1
+  Interface MTU is 1500
+  Full-duplex, 10000Mbps, link type is 10000Mbps full-duplex, media type is 10G-Fiber
+  Link is up for 263 days, 0 hours, 8 minutes and 34 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 1608 Kbit/s
+  15 second output rate is 8977 Kbit/s
+      26988416285 packets input, 19034876715737 bytes received
+      119147 broadcasts, 1119770 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      4 pause frames received
+      41169454438 packets output, 37303856670377 bytes sent
+      35117413 broadcasts, 157218368 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/23 ------------------
+tengigabitethernet1/0/23 is down (admin.shutdown)
+  Interface index is 23
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d7
+  Description: DISABLED
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 33 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces te1/0/24 ------------------
+tengigabitethernet1/0/24 is up (connected)
+  Interface index is 24
+  Hardware is tengigabitethernet, MAC address is e4:5a:d4:0c:d3:d8
+  Description: SPB-SEC-E2348P-c02_te1/0/2
+  Interface MTU is 1500
+  Full-duplex, 10000Mbps, link type is 10000Mbps full-duplex, media type is 10G-Fiber
+  Link is up for 312 days, 0 hours, 27 minutes and 33 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 33318 Kbit/s
+  15 second output rate is 71337 Kbit/s
+      131804967264 packets input, 94600832529008 bytes received
+      10907648 broadcasts, 31900318 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      203138325751 packets output, 226476981173448 bytes sent
+      97723749 broadcasts, 104893497 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces fo1/0/1 ------------------
+fortygigabitethernet1/0/1 is down (admin.shutdown)
+  Interface index is 25
+  Hardware is fortygigabitethernet, MAC address is e4:5a:d4:0c:d3:d9
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 32 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces fo1/0/2 ------------------
+fortygigabitethernet1/0/2 is up (connected)
+  Interface index is 26
+  Hardware is fortygigabitethernet, MAC address is e4:5a:d4:0c:d3:da
+  Description: SPB-SEC-E5324-c01_fo1/0/2
+  Interface MTU is 1500
+  Full-duplex, 40000Mbps, link type is Mbps full-duplex, media type is 40G-Fiber
+  Link is up for 312 days, 0 hours, 28 minutes and 5 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 86 Kbit/s
+  15 second output rate is 5 Kbit/s
+      26363516746 packets input, 20688512760779 bytes received
+      13071431 broadcasts, 56543047 multicasts
+      109265568 input errors, 106440455 FCS, 0 alignment
+      0 oversize, 2822648 internal MAC
+      0 pause frames received
+      353118453 packets output, 239974536263 bytes sent
+      19605598 broadcasts, 143484751 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces fo1/0/3 ------------------
+fortygigabitethernet1/0/3 is down (admin.shutdown)
+  Interface index is 27
+  Hardware is fortygigabitethernet, MAC address is e4:5a:d4:0c:d3:db
+  Interface MTU is 1500
+  Link is down for 312 days, 0 hours, 28 minutes and 30 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces fo1/0/4 ------------------
+fortygigabitethernet1/0/4 is up (connected)
+  Interface index is 28
+  Hardware is fortygigabitethernet, MAC address is e4:5a:d4:0c:d3:dc
+  Description: SPB-SEC-E5324-c01_fo1/0/4
+  Interface MTU is 1500
+  Full-duplex, 40000Mbps, link type is Mbps full-duplex, media type is 40G-Fiber
+  Link is up for 312 days, 0 hours, 27 minutes and 45 seconds
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 5498 Kbit/s
+  15 second output rate is 27 Kbit/s
+      38389637783 packets input, 18914678986544 bytes received
+      19780142 broadcasts, 14867095 multicasts
+      85746910 input errors, 78786558 FCS, 0 alignment
+      0 oversize, 6955078 internal MAC
+      0 pause frames received
+      3485295215 packets output, 310479135177 bytes sent
+      89161319 broadcasts, 34703234 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces gi1/0/1 ------------------
+gigabitethernet1/0/1 is up (connected)
+  Interface index is 49
+  Hardware is gigabitethernet, MAC address is e4:5a:d4:0c:d3:dd
+  Description: DPD-Link
+  IPv4 address is 1.1.1.2/30
+  Interface MTU is 1500
+  Full-duplex, 1000Mbps, link type is auto, media type is 1G-Copper
+  Link is up for 312 days, 0 hours, 28 minutes and 13 seconds
+  Advertised link modes: 1000baseT/Full 100baseT/Full
+                         100baseT/Half 10baseT/Full
+                         10baseT/Half
+  Flow control is off, MDIX mode is normal
+  FEC is disabled
+  15 second input rate is 2 Kbit/s
+  15 second output rate is 2 Kbit/s
+      135744467 packets input, 8687645888 bytes received
+      134789370 broadcasts, 953300 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      135821253 packets output, 8695041739 bytes sent
+      134783844 broadcasts, 955947 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+  Output queues: (queue #: packets passed/packets dropped)
+      1: 0/0
+      2: 0/0
+      3: 0/0
+      4: 0/0
+      5: 0/0
+      6: 0/0
+      7: 0/0
+      8: 0/0
+------------------ show interfaces Po1 ------------------
+Po1 is up (connected)
+  Interface index is 1000
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: InterSW-Link
+  Interface MTU is 1500
+  Link is up for 312 days, 0 hours, 27 minutes and 18 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 2 (active 2)
+      fortygigabitethernet1/0/2, full-duplex, LACP active, 40000Mbps (active)
+      fortygigabitethernet1/0/4, full-duplex, LACP active, 40000Mbps (active)
+    Active bandwidth is 80000Mbps
+  15 second input rate is 5301 Kbit/s
+  15 second output rate is 33 Kbit/s
+      64753156782 packets input, 39603192822017 bytes received
+      32851578 broadcasts, 71410148 multicasts
+      195012480 input errors, 185227015 FCS, 0 alignment
+      0 oversize, 9777726 internal MAC
+      0 pause frames received
+      3838413697 packets output, 550453676544 bytes sent
+      108766929 broadcasts, 178188000 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po2 ------------------
+Po2 is up (connected)
+  Interface index is 1001
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: SPB-SEC-E2348P-c02
+  Interface MTU is 1500
+  Link is up for 312 days, 0 hours, 27 minutes and 15 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 1 (active 1)
+      tengigabitethernet1/0/12, full-duplex, LACP active, 10000Mbps (active)
+    Active bandwidth is 10000Mbps
+  15 second input rate is 69809 Kbit/s
+  15 second output rate is 11774 Kbit/s
+      197630068381 packets input, 246289830033143 bytes received
+      10260109 broadcasts, 2706605 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      118188041021 packets output, 83805967370958 bytes sent
+      98371333 broadcasts, 134087140 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po3 ------------------
+Po3 is up (connected)
+  Interface index is 1002
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: SPB-SEC-E2348P-c02
+  Interface MTU is 1500
+  Link is up for 312 days, 0 hours, 27 minutes and 7 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 1 (active 1)
+      tengigabitethernet1/0/24, full-duplex, LACP active, 10000Mbps (active)
+    Active bandwidth is 10000Mbps
+  15 second input rate is 33705 Kbit/s
+  15 second output rate is 71278 Kbit/s
+      131804991747 packets input, 94600854077848 bytes received
+      10907650 broadcasts, 31900325 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      203138366841 packets output, 226477026681762 bytes sent
+      97723769 broadcasts, 104893518 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po4 ------------------
+Po4 is down (not connected)
+  Interface index is 1003
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po5 ------------------
+Po5 is down (not connected)
+  Interface index is 1004
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po6 ------------------
+Po6 is down (not connected)
+  Interface index is 1005
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po7 ------------------
+Po7 is down (not connected)
+  Interface index is 1006
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po8 ------------------
+Po8 is down (not connected)
+  Interface index is 1007
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po9 ------------------
+Po9 is down (not connected)
+  Interface index is 1008
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po10 ------------------
+Po10 is up (connected)
+  Interface index is 1009
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: Transoil_Uplink
+  Interface MTU is 1500
+  Link is up for 305 days, 14 hours, 31 minutes and 43 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 1 (active 1)
+      tengigabitethernet1/0/1, full-duplex, LACP active, 10000Mbps (active)
+    Active bandwidth is 10000Mbps
+  15 second input rate is 4558 Kbit/s
+  15 second output rate is 26603 Kbit/s
+      13700055205 packets input, 10890189040507 bytes received
+      78467203 broadcasts, 18543737 multicasts
+      6 input errors, 6 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      76554337342 packets output, 73102445071429 bytes sent
+      29423712 broadcasts, 117821071 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po11 ------------------
+Po11 is down (not connected)
+  Interface index is 1010
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po12 ------------------
+Po12 is down (not connected)
+  Interface index is 1011
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po13 ------------------
+Po13 is down (not connected)
+  Interface index is 1012
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po14 ------------------
+Po14 is down (not connected)
+  Interface index is 1013
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po15 ------------------
+Po15 is down (not connected)
+  Interface index is 1014
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po16 ------------------
+Po16 is down (not connected)
+  Interface index is 1015
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po17 ------------------
+Po17 is down (not connected)
+  Interface index is 1016
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po18 ------------------
+Po18 is down (not connected)
+  Interface index is 1017
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po19 ------------------
+Po19 is up (connected)
+  Interface index is 1018
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: SecSrvHpV03_iSCSI_Team
+  Interface MTU is 1500
+  Link is up for 312 days, 0 hours, 27 minutes and 20 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 1 (active 1)
+      tengigabitethernet1/0/19, full-duplex, LACP passive, 10000Mbps (active)
+    Active bandwidth is 10000Mbps
+  15 second input rate is 1342 Kbit/s
+  15 second output rate is 3180 Kbit/s
+      22925533951 packets input, 29404661775019 bytes received
+      5 broadcasts, 904958 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      24888819568 packets output, 33511327588928 bytes sent
+      116699 broadcasts, 41697666 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po20 ------------------
+Po20 is up (connected)
+  Interface index is 1019
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: SecSrvHpV04_iSCSI_Team
+  Interface MTU is 1500
+  Link is up for 263 days, 0 hours, 5 minutes and 26 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 1 (active 1)
+      tengigabitethernet1/0/20, full-duplex, LACP passive, 10000Mbps (active)
+    Active bandwidth is 10000Mbps
+  15 second input rate is 3179 Kbit/s
+  15 second output rate is 1343 Kbit/s
+      24848384601 packets input, 33507073218076 bytes received
+      116735 broadcasts, 1261791 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      4 pause frames received
+      22965970211 packets output, 29408918600259 bytes sent
+      0 broadcasts, 41340306 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po21 ------------------
+Po21 is up (connected)
+  Interface index is 1020
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: SecSrvHpV03_team
+  Interface MTU is 1500
+  Link is up for 263 days, 1 hours, 13 minutes and 23 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 1 (active 1)
+      tengigabitethernet1/0/21, full-duplex, LACP passive, 10000Mbps (active)
+    Active bandwidth is 10000Mbps
+  15 second input rate is 3585 Kbit/s
+  15 second output rate is 5449 Kbit/s
+      56483637158 packets input, 59449784762135 bytes received
+      1945628 broadcasts, 5033914 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      4 pause frames received
+      58756042080 packets output, 49881865477406 bytes sent
+      33290828 broadcasts, 153303695 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po22 ------------------
+Po22 is up (connected)
+  Interface index is 1021
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c1
+  Description: SecSrvHpV04_team
+  Interface MTU is 1500
+  Link is up for 263 days, 0 hours, 5 minutes and 26 seconds
+    Link aggregation type is LACP
+    No. of members in this port-channel: 1 (active 1)
+      tengigabitethernet1/0/22, full-duplex, LACP passive, 10000Mbps (active)
+    Active bandwidth is 10000Mbps
+  15 second input rate is 1658 Kbit/s
+  15 second output rate is 3539 Kbit/s
+      26988429110 packets input, 19034879476600 bytes received
+      119147 broadcasts, 1119770 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      4 pause frames received
+      41169469797 packets output, 37303868719502 bytes sent
+      35117430 broadcasts, 157218457 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po23 ------------------
+Po23 is down (not connected)
+  Interface index is 1022
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po24 ------------------
+Po24 is down (not connected)
+  Interface index is 1023
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po25 ------------------
+Po25 is down (not connected)
+  Interface index is 1024
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po26 ------------------
+Po26 is down (not connected)
+  Interface index is 1025
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po27 ------------------
+Po27 is down (not connected)
+  Interface index is 1026
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po28 ------------------
+Po28 is down (not connected)
+  Interface index is 1027
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po29 ------------------
+Po29 is down (not connected)
+  Interface index is 1028
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po30 ------------------
+Po30 is down (not connected)
+  Interface index is 1029
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po31 ------------------
+Po31 is down (not connected)
+  Interface index is 1030
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po32 ------------------
+Po32 is down (not connected)
+  Interface index is 1031
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po33 ------------------
+Po33 is down (not connected)
+  Interface index is 1032
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po34 ------------------
+Po34 is down (not connected)
+  Interface index is 1033
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po35 ------------------
+Po35 is down (not connected)
+  Interface index is 1034
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po36 ------------------
+Po36 is down (not connected)
+  Interface index is 1035
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po37 ------------------
+Po37 is down (not connected)
+  Interface index is 1036
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po38 ------------------
+Po38 is down (not connected)
+  Interface index is 1037
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po39 ------------------
+Po39 is down (not connected)
+  Interface index is 1038
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po40 ------------------
+Po40 is down (not connected)
+  Interface index is 1039
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po41 ------------------
+Po41 is down (not connected)
+  Interface index is 1040
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po42 ------------------
+Po42 is down (not connected)
+  Interface index is 1041
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po43 ------------------
+Po43 is down (not connected)
+  Interface index is 1042
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po44 ------------------
+Po44 is down (not connected)
+  Interface index is 1043
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po45 ------------------
+Po45 is down (not connected)
+  Interface index is 1044
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po46 ------------------
+Po46 is down (not connected)
+  Interface index is 1045
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po47 ------------------
+Po47 is down (not connected)
+  Interface index is 1046
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces Po48 ------------------
+Po48 is down (not connected)
+  Interface index is 1047
+  Hardware is aggregated ethernet interface(s), MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1500
+  15 second input rate is 0 Kbit/s
+  15 second output rate is 0 Kbit/s
+      0 packets input, 0 bytes received
+      0 broadcasts, 0 multicasts
+      0 input errors, 0 FCS, 0 alignment
+      0 oversize, 0 internal MAC
+      0 pause frames received
+      0 packets output, 0 bytes sent
+      0 broadcasts, 0 multicasts
+      0 output errors, 0 collisions
+      0 excessive collisions, 0 late collisions
+      0 pause frames transmitted
+      0 symbol errors, 0 carrier, 0 SQE test error
+------------------ show interfaces tunnel1 ------------------
+tunnel1 is down (not connected)
+  Interface index is 3000
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel2 ------------------
+tunnel2 is down (not connected)
+  Interface index is 3001
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel3 ------------------
+tunnel3 is down (not connected)
+  Interface index is 3002
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel4 ------------------
+tunnel4 is down (not connected)
+  Interface index is 3003
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel5 ------------------
+tunnel5 is down (not connected)
+  Interface index is 3004
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel6 ------------------
+tunnel6 is down (not connected)
+  Interface index is 3005
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel7 ------------------
+tunnel7 is down (not connected)
+  Interface index is 3006
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel8 ------------------
+tunnel8 is down (not connected)
+  Interface index is 3007
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel9 ------------------
+tunnel9 is down (not connected)
+  Interface index is 3008
+  Hardware is , MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel10 ------------------
+tunnel10 is down (not connected)
+  Interface index is 3009
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel11 ------------------
+tunnel11 is down (not connected)
+  Interface index is 3010
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel12 ------------------
+tunnel12 is down (not connected)
+  Interface index is 3011
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel13 ------------------
+tunnel13 is down (not connected)
+  Interface index is 3012
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel14 ------------------
+tunnel14 is down (not connected)
+  Interface index is 3013
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
+------------------ show interfaces tunnel15 ------------------
+tunnel15 is down (not connected)
+  Interface index is 3014
+  Hardware is tunnel, MAC address is e4:5a:d4:0c:d3:c0
+  Interface MTU is 1476
